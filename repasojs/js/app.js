@@ -104,10 +104,50 @@ actividad('Pedro', 'Creando un sitio web');
 actividad();
  */
 
-const actividad = function(nombre = 'Walter White', actividad = 'Enseñar Quimica'){
+/* const actividad = function(nombre = 'Walter White', actividad = 'Enseñar Quimica'){
     console.log(`La persona ${nombre}, esta realizando la actividad ${actividad}`);
 }
 
 actividad('Juan', 'Aprender Javascript');
 actividad('Pedro', 'Creando un sitio web');
-actividad();
+actividad(); */
+
+// array functions
+
+// (old version)
+/* let viajando = function(destino){
+    return `Viajando a la ciudad de: ${destino}`;
+}
+
+let viaje;
+viaje = viajando('Paris');
+
+console.log(viaje); */
+
+// si le pasas un parametro (new version)
+/* let viajando = destino => {
+    return `Viajando a la ciudad de: ${destino}`;
+}
+
+let viaje;
+viaje = viajando('Barcelona');
+
+console.log(viaje); */
+
+// si le pasas mas de un parametro
+/* let viajando = (destino, duracion) => {
+    return `Viajando a la ciudad de: ${destino} por ${duracion}`;
+}
+
+let viaje;
+viaje = viajando('Barcelona', '9 dias');
+
+console.log(viaje); */
+
+// si retornas un solo valor
+let viajando = destino => `Viajando a la ciudad de: ${destino}`;
+
+let viaje;
+viaje = viajando('Lima');
+
+console.log(viaje);
