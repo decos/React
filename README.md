@@ -56,3 +56,5 @@ La ventaja es que puedes crear objetos de forma dinamica
 
 ## Prototypes
 Nos va permitir atar ciertas funciones al un tipo de objeto y va ser que el codigo se vea mucho mas ordenado
+
+## Object Destructuring

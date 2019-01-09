@@ -184,21 +184,13 @@ console.log(tarea3);
 console.log(tarea4); */
 
 // Prototype
-
-const persona = {
-    nombre: 'Juan',
-    profesion: 'Desarrollador Web',
-    edad: 500
-}
-console.log(persona);
-
-function Tarea(nombre, urgencia){
+/* function Tarea(nombre, urgencia){
     this.nombre = nombre;
     this.urgencia = urgencia;
-}
+} */ 
 
 // Agregar un prototype a tarea
-Tarea.prototype.mostrarInformacionTarea =  function() {
+/* Tarea.prototype.mostrarInformacionTarea =  function() {
     return `La tarea ${this.nombre} tiene una prioridad de ${this.urgencia}`;
 }
 
@@ -207,4 +199,31 @@ const tarea1 = new Tarea('Pasear al perro', 'Media');
 console.log(tarea1);
 console.log(tarea1.mostrarInformacionTarea());
 console.log(tarea2);
-console.log(tarea2.mostrarInformacionTarea());
+console.log(tarea2.mostrarInformacionTarea()); */
+
+// Destructuring de objetos
+
+const aprendiendoJS = {
+    version: {
+        nueva: 'ES6',
+        anterior: 'ES5'
+    },
+    frameworks: ['React', 'VueJS', 'AngularJS']
+}
+console.log(aprendiendoJS);
+
+// Destructuring: es extraer valores de un objeto
+
+// version anterior
+/* let version = aprendiendoJS.version.nueva;
+console.log(version);
+let framework = aprendiendoJS.frameworks[1];
+console.log(framework); */
+
+// version nueva
+/* let {version, frameworks} = aprendiendoJS;
+console.log(version);
+console.log(frameworks); */
+
+let {nueva} = aprendiendoJS.version;
+console.log(nueva);
