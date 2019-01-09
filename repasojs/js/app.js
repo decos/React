@@ -203,14 +203,14 @@ console.log(tarea2.mostrarInformacionTarea()); */
 
 // Destructuring de objetos
 
-const aprendiendoJS = {
+/* const aprendiendoJS = {
     version: {
         nueva: 'ES6',
         anterior: 'ES5'
     },
     frameworks: ['React', 'VueJS', 'AngularJS']
 }
-console.log(aprendiendoJS);
+console.log(aprendiendoJS); */
 
 // Destructuring: es extraer valores de un objeto
 
@@ -225,5 +225,25 @@ console.log(framework); */
 console.log(version);
 console.log(frameworks); */
 
-let {nueva} = aprendiendoJS.version;
-console.log(nueva);
+/* let {nueva} = aprendiendoJS.version;
+console.log(nueva); */
+
+// Object Literal Enhacement
+
+const banda = 'Metallica';
+const genero = 'Heavy Metal';
+const canciones = ['Master of Puppets', 'Seek & Destroy', 'Enter Sandman'];
+
+// forma anterior
+
+/* const metallica = {
+    banda: banda,
+    genero: genero,
+    canciones: canciones
+}
+
+console.log(metallica); */
+
+// forma nueva
+const metallica = { banda, genero, canciones};
+console.log(metallica);

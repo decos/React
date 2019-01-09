@@ -58,3 +58,7 @@ La ventaja es que puedes crear objetos de forma dinamica
 Nos va permitir atar ciertas funciones al un tipo de objeto y va ser que el codigo se vea mucho mas ordenado
 
 ## Object Destructuring
+Extrayendo valores de un objeto
+
+## Object Literal Enhacement
+Poner valores en un objeto
