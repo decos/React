@@ -45,3 +45,4 @@ Se comparo la antigua forma con la nueva forma
 ## Funciones y los distintos tipos de funciones
 Diferencia entre function declaration y function expression, la primera no importa si la llamas antes de la funcion o despues, la otra solo despues.
 
+## Funciones con paramaetros

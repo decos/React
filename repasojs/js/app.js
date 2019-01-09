@@ -78,19 +78,36 @@ contenedorApp.innerHTML = html; */
 // creando una funcion
 
 // Function Declaration
-function saludar( nombre ){
+/* function saludar( nombre ){
     console.log('Bienvenido ' + nombre);
 }
 
 saludar('Diego');
 saludar('Carlos');
-saludar('Kevin');
+saludar('Kevin'); */
 
 // Function Expression
-
-const cliente =  function(nombreCliente) {
+/* const cliente =  function(nombreCliente) {
     console.log('Mostrando datos del cliente: ' + nombreCliente);
 }
 
-cliente('Juan');
+cliente('Juan'); */
 
+// parametros por default en las funciones
+
+/* function actividad(nombre = 'Walter White', actividad = 'Enseñar Quimica'){
+    console.log(`La persona ${nombre}, esta realizando la actividad ${actividad}`);
+}
+
+actividad('Juan', 'Aprender Javascript');
+actividad('Pedro', 'Creando un sitio web');
+actividad();
+ */
+
+const actividad = function(nombre = 'Walter White', actividad = 'Enseñar Quimica'){
+    console.log(`La persona ${nombre}, esta realizando la actividad ${actividad}`);
+}
+
+actividad('Juan', 'Aprender Javascript');
+actividad('Pedro', 'Creando un sitio web');
+actividad();
