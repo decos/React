@@ -51,3 +51,5 @@ Diferencia entre function declaration y function expression, la primera no impor
 
 ## Objetos en Javascript - Objeto Literal
 
+## Objetos en Javascript - Objeto Constructor
+La ventaja es que puedes crear objetos de forma dinamica
