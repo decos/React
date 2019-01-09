@@ -35,3 +35,7 @@ Introducción Javascript
 
 ## Variables con var
 
+## Variables con let y const
+
+## Scope en Javascript
+
