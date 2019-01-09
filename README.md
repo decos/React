@@ -48,3 +48,6 @@ Diferencia entre function declaration y function expression, la primera no impor
 ## Funciones con parametros
 
 ## Arrow functions
+
+## Objetos en Javascript - Objeto Literal
+

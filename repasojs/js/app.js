@@ -145,9 +145,24 @@ viaje = viajando('Barcelona', '9 dias');
 console.log(viaje); */
 
 // si retornas un solo valor
-let viajando = destino => `Viajando a la ciudad de: ${destino}`;
+/* let viajando = destino => `Viajando a la ciudad de: ${destino}`;
 
 let viaje;
 viaje = viajando('Lima');
 
-console.log(viaje);
+console.log(viaje); */
+
+// Objetos
+
+// Object Literal
+const persona = {
+    nombre: 'Juan',
+    profesion: 'Desarrollador Web',
+    edad: 500
+}
+
+console.log(persona);
+console.log(persona.nombre);
+console.log(persona.profesion);
+console.log(persona.edad);
+console.log(persona['edad']);
