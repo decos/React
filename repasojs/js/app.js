@@ -48,14 +48,14 @@ console.log('Fuera del IF: ', musica); */
 
 // Template Strings
 
-const nombre = 'Diego';
-const trabajo = 'Desarrollador Web'; 
+/* const nombre = 'Diego';
+const trabajo = 'Desarrollador Web';  */
 
 // concatenar javascript (old version)
-console.log('Nombre: ' +  nombre + ', Trabajo: ' + trabajo);
+/* console.log('Nombre: ' +  nombre + ', Trabajo: ' + trabajo); */
 
 // concatenar javascript (new version)
-console.log(`Nombre: ${nombre} , Trabajo: ${trabajo}`);
+/* console.log(`Nombre: ${nombre} , Trabajo: ${trabajo}`); */
 
 // concantenar con multiples lineas (old version)
 /* const contenedorApp = document.querySelector('#app');
@@ -66,11 +66,31 @@ let html = '<ul>' +
 contenedorApp.innerHTML = html; */
 
 // concantenar con multiples lineas (new version)
-const contenedorApp = document.querySelector('#app');
+/* const contenedorApp = document.querySelector('#app');
 
 let html = `<ul>
                 <li>Nombre: ${nombre}</li>
                 <li>Trabajo: ${trabajo}</li>
             </ul>`;
 
-contenedorApp.innerHTML = html;
+contenedorApp.innerHTML = html; */
+
+// creando una funcion
+
+// Function Declaration
+function saludar( nombre ){
+    console.log('Bienvenido ' + nombre);
+}
+
+saludar('Diego');
+saludar('Carlos');
+saludar('Kevin');
+
+// Function Expression
+
+const cliente =  function(nombreCliente) {
+    console.log('Mostrando datos del cliente: ' + nombreCliente);
+}
+
+cliente('Juan');
+
