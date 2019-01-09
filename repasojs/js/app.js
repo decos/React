@@ -45,3 +45,32 @@ if(musica){
     console.log('Dentro del IF: ', musica);
 }
 console.log('Fuera del IF: ', musica); */
+
+// Template Strings
+
+const nombre = 'Diego';
+const trabajo = 'Desarrollador Web'; 
+
+// concatenar javascript (old version)
+console.log('Nombre: ' +  nombre + ', Trabajo: ' + trabajo);
+
+// concatenar javascript (new version)
+console.log(`Nombre: ${nombre} , Trabajo: ${trabajo}`);
+
+// concantenar con multiples lineas (old version)
+/* const contenedorApp = document.querySelector('#app');
+let html = '<ul>' + 
+                '<li> Nombre: ' + nombre + '</li>' +
+                '<li> Trabajo: ' + trabajo + '</li>' +
+            '</ul>';
+contenedorApp.innerHTML = html; */
+
+// concantenar con multiples lineas (new version)
+const contenedorApp = document.querySelector('#app');
+
+let html = `<ul>
+                <li>Nombre: ${nombre}</li>
+                <li>Trabajo: ${trabajo}</li>
+            </ul>`;
+
+contenedorApp.innerHTML = html;

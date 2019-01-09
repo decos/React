@@ -39,3 +39,5 @@ Introducción Javascript
 
 ## Scope en Javascript
 
+## Template Strings en Javascript
+Se comparo la antigua forma con la nueva forma
