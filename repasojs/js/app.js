@@ -230,10 +230,10 @@ console.log(nueva); */
 
 // Object Literal Enhacement
 
-const banda = 'Metallica';
+/* const banda = 'Metallica';
 const genero = 'Heavy Metal';
 const canciones = ['Master of Puppets', 'Seek & Destroy', 'Enter Sandman'];
-
+ */
 // forma anterior
 
 /* const metallica = {
@@ -245,5 +245,19 @@ const canciones = ['Master of Puppets', 'Seek & Destroy', 'Enter Sandman'];
 console.log(metallica); */
 
 // forma nueva
-const metallica = { banda, genero, canciones};
-console.log(metallica);
+/* const metallica = { banda, genero, canciones};
+console.log(metallica); */
+
+// Metodos y funciones de un objeto
+
+/* const persona = {
+    nombre: 'Juan',
+    trabajo: 'Desarrollador Web',
+    edad: 27,
+    musicaRock: true,
+    mostrarInformacion: function() {
+        console.log(`${this.nombre} es ${this.trabajo} y su edad es ${this.edad}`)
+    }
+}
+
+persona.mostrarInformacion(); */

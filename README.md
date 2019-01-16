@@ -62,3 +62,5 @@ Extrayendo valores de un objeto
 
 ## Object Literal Enhacement
 Poner valores en un objeto
+
+## Funciones en un Objeto
