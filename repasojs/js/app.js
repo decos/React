@@ -261,3 +261,37 @@ console.log(metallica); */
 }
 
 persona.mostrarInformacion(); */
+
+// Arreglos y .map
+
+/* const carrito = ['Producto 1', 'Producto 2', 'Producto 3'];
+console.log(carrito); */
+
+// primera forma
+/* const appContenedor = document.querySelector('#app');
+
+let html = '';
+carrito.forEach( producto => {
+    html += `<li>${producto}</li>`;
+})
+
+appContenedor.innerHTML = html; */
+
+// segunda forma (MAP)
+
+/* const carrito = ['Producto 1', 'Producto 2', 'Producto 3'];
+console.log(carrito);
+
+carrito.map(producto => {
+    return 'El producto es ' + producto;
+}) */
+
+// Object.keys
+
+const persona = {
+    nombre: 'Juan',
+    profesion: 'Desarrollador Web',
+    edad: 500
+}
+
+console.log(Object.keys(persona));

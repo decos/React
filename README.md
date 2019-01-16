@@ -64,3 +64,9 @@ Extrayendo valores de un objeto
 Poner valores en un objeto
 
 ## Funciones en un Objeto
+
+## Arreglos, map y Object.keys
+map: La idea de usar map es conservar el arreglo original y generar un nuevo arreglo
+
+Object.keys: Obtener las llaves del arreglo
+
