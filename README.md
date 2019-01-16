@@ -70,3 +70,4 @@ map: La idea de usar map es conservar el arreglo original y generar un nuevo arr
 
 Object.keys: Obtener las llaves del arreglo
 
+## Spread Operator

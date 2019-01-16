@@ -288,10 +288,39 @@ carrito.map(producto => {
 
 // Object.keys
 
-const persona = {
+/* const persona = {
     nombre: 'Juan',
     profesion: 'Desarrollador Web',
     edad: 500
 }
 
-console.log(Object.keys(persona));
+console.log(Object.keys(persona)); */
+
+// Spread operator
+
+/* let lenguajes = ['JavaScript', 'PHP', 'Python'];
+let frameworks = ['ReactJS', 'Laravel', 'Django']; */
+
+// unir los arreglos en uno solo
+
+/* let combinacion = [...lenguajes, ...frameworks];
+console.log(combinacion); */
+
+// ejemplo 2
+
+/* let lenguajes = ['JavaScript', 'PHP', 'Python'];
+
+let [ultimo] = [...lenguajes].reverse();
+
+console.log(lenguajes);
+console.log(ultimo); */
+
+// ejemplo 3
+
+function suma(a, b, c){
+    console.log(a + b + c);
+}
+
+const numeros = [1,2,3];
+
+suma(...numeros);
