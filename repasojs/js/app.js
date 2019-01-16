@@ -317,10 +317,42 @@ console.log(ultimo); */
 
 // ejemplo 3
 
-function suma(a, b, c){
+/* function suma(a, b, c){
     console.log(a + b + c);
 }
 
 const numeros = [1,2,3];
 
-suma(...numeros);
+suma(...numeros); */
+
+// Métodos en arreglos
+
+const personas = [
+    {nombre: 'Juan', edad: 23, aprendiendo: 'JavaScript'},
+    {nombre: 'Pablo', edad: 18, aprendiendo: 'PHP'},
+    {nombre: 'Alejandra', edad: 21, aprendiendo: 'AdobeXD'},
+    {nombre: 'Karen', edad: 30, aprendiendo: 'Python'},
+    {nombre: 'Miguel', edad: 35, aprendiendo: 'ReactJS'},
+]
+
+console.log(personas);
+
+// filtrar > 28 años
+const mayores = personas.filter(persona => {
+    return persona.edad > 28
+});
+console.log(mayores);
+
+// que aprende alejandra y su edad
+const alejandra  = personas.find(persona => {
+    return persona.nombre === 'Alejandra';
+});
+console.log('Alejandra esta aprendiendo: ' + alejandra.aprendiendo);
+
+// usar reduce, hallar el total de las edades de las personas
+
+let total = personas.reduce((edadTotal, persona) => {
+    return edadTotal + persona.edad
+}, 0); // donde 0 es el valor inicial de edadTotal
+
+console.log(total/personas.length);
