@@ -83,3 +83,11 @@ reject: es el codigo que se ejecuta cuando ocurre un error
 
 ## Programación orientada a Objetos - Clases
 Se dice que cuando pasas una funcion a una clase ya es un metodo
+
+## Programación orientada a Objetos - Clases - Herencia
+
+## Exportar variables hacia otro archivo
+
+## Exportar funciones hacia otros modulos
+
+## Exportando clases en modulos

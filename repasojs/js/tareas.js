@@ -1,4 +1,4 @@
-
+/* 
 export const nombreTarea = 'Pasear al perro';
 
 // exportar una funcion
@@ -9,11 +9,11 @@ export const crearTarea = (tarea, urgencia) => {
 
 export const tareaCompletada = () => {
     console.log('La tarea se completó');
-}
+} */
 
 // POO - Escribir clases
 
-class Tarea {
+export default class Tarea {
     constructor(nombre, prioridad){
         this.nombre = nombre;
         this.prioridad = prioridad;
@@ -25,7 +25,7 @@ class Tarea {
     }
 }
 
-class ComprasPendientes extends Tarea {
+/* class ComprasPendientes extends Tarea {
     constructor(nombre, prioridad, cantidad){
         super(nombre, prioridad);
         this.cantidad = cantidad;
@@ -39,7 +39,7 @@ class ComprasPendientes extends Tarea {
     hola() {
         return "hola";
     }
-}
+} */
 
 // crear los objetos
 /* let tarea1 = new Tarea('Aprender JavaScript', 'Alta');
@@ -54,6 +54,6 @@ console.log(tarea4.mostrar()); */
 
 // Compras
 
-let compra1 = new ComprasPendientes('Jabon', 'Urgente', 3);
+//let compra1 = new ComprasPendientes('Jabon', 'Urgente', 3);
 /* compra1.mostrar();
 console.log(compra1.hola()); */
