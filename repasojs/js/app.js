@@ -327,7 +327,7 @@ suma(...numeros); */
 
 // Métodos en arreglos
 
-const personas = [
+/* const personas = [
     {nombre: 'Juan', edad: 23, aprendiendo: 'JavaScript'},
     {nombre: 'Pablo', edad: 18, aprendiendo: 'PHP'},
     {nombre: 'Alejandra', edad: 21, aprendiendo: 'AdobeXD'},
@@ -355,4 +355,24 @@ let total = personas.reduce((edadTotal, persona) => {
     return edadTotal + persona.edad
 }, 0); // donde 0 es el valor inicial de edadTotal
 
-console.log(total/personas.length);
+console.log(total/personas.length); */
+
+// Promises
+
+const aplicarDescuento = new Promise((resolve, reject) => {
+    setTimeout( () => {
+        let descuento = false; 
+
+        if(descuento){
+            resolve('Descuento aplicado!');
+        } else{
+            reject('No se pudo aplicar el descuento');
+        }
+    }, 3000);
+});
+
+aplicarDescuento.then( resultado => {
+    console.log(resultado);
+}).catch(error => {
+    console.log(error);
+})

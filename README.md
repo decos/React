@@ -74,3 +74,7 @@ Object.keys: Obtener las llaves del arreglo
 
 ## .filter .find y .reduce y métodos para arreglos
 
+## Promises
+resolve: es el codigo que se ejecuta cuando se llama al Promise
+
+reject: es el codigo que se ejecuta cuando ocurre un error
