@@ -359,7 +359,7 @@ console.log(total/personas.length); */
 
 // Promises
 
-const aplicarDescuento = new Promise((resolve, reject) => {
+/* const aplicarDescuento = new Promise((resolve, reject) => {
     setTimeout( () => {
         let descuento = false; 
 
@@ -376,3 +376,41 @@ aplicarDescuento.then( resultado => {
 }).catch(error => {
     console.log(error);
 })
+ */
+
+// Promises con Ajax
+
+const descargarUsuarios = cantidad => new Promise( (resolve, reject) => {
+    // pasar la cantidad a la api
+    const api = `https://randomuser.me/api/?results=${cantidad}&nat=us`;
+
+    // llamado a ajax
+    const xhr = new XMLHttpRequest();
+
+    // abrir la conexion
+    // GET o POST, la API, si es asincrono o no
+    xhr.open('GET', api, true);
+
+    // on load
+    xhr.onload = () => {
+        if(xhr.status === 200){
+            // Convertir un String a un Objeto de JavaScript
+            resolve( JSON.parse(xhr.responseText).results);
+        } else {
+            reject( Error(xhr.statusText) );
+        }
+    }
+
+    // opcional (on error)
+    xhr.onerror = (error) => reject(error);
+
+    // send
+    xhr.send();
+} );
+
+descargarUsuarios(20).then(
+    miembros => console.log(miembros),
+    error => console.error(
+        new Error('Hubo un error: ' + error)
+    )
+)
