@@ -78,3 +78,8 @@ Object.keys: Obtener las llaves del arreglo
 resolve: es el codigo que se ejecuta cuando se llama al Promise
 
 reject: es el codigo que se ejecuta cuando ocurre un error
+
+## Promises con Ajax
+
+## Programación orientada a Objetos - Clases
+Se dice que cuando pasas una funcion a una clase ya es un metodo

@@ -380,7 +380,7 @@ aplicarDescuento.then( resultado => {
 
 // Promises con Ajax
 
-const descargarUsuarios = cantidad => new Promise( (resolve, reject) => {
+/* const descargarUsuarios = cantidad => new Promise( (resolve, reject) => {
     // pasar la cantidad a la api
     const api = `https://randomuser.me/api/?results=${cantidad}&nat=us`;
 
@@ -432,4 +432,28 @@ function imprimirHTML(usuarios){
 
     const contenedorApp = document.querySelector('#app');
     contenedorApp.innerHTML = html;
+} */
+
+// POO - Escribir clases
+
+class Tarea {
+    constructor(nombre, prioridad){
+        this.nombre = nombre;
+        this.prioridad = prioridad;
+    }
+
+    mostrar(){
+        return `${this.nombre} tiene una prioridad de ${this.prioridad}`;
+    }
 }
+
+// crear los objetos
+let tarea1 = new Tarea('Aprender JavaScript', 'Alta');
+let tarea2 = new Tarea('Preparar café', 'Media');
+let tarea3 = new Tarea('Pasear al perro', 'Alta');
+let tarea4 = new Tarea('Conocer el mundo', 'Baja');
+
+console.log(tarea1.mostrar());
+console.log(tarea2.mostrar());
+console.log(tarea3.mostrar());
+console.log(tarea4.mostrar());
