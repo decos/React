@@ -408,9 +408,28 @@ const descargarUsuarios = cantidad => new Promise( (resolve, reject) => {
     xhr.send();
 } );
 
-descargarUsuarios(20).then(
-    miembros => console.log(miembros),
+descargarUsuarios(5).then(
+    miembros => imprimirHTML(miembros),
     error => console.error(
         new Error('Hubo un error: ' + error)
     )
 )
+
+function imprimirHTML(usuarios){
+    let html = '';
+    usuarios.forEach(usuario => {
+        console.log(usuario);
+
+        html += `
+            <li>
+                Nombre: ${usuario.name.first} ${usuario.name.last}
+                País: ${usuario.nat}
+                Imagen:
+                    <img src="${usuario.picture.medium}">
+            </li>
+        `;
+    });
+
+    const contenedorApp = document.querySelector('#app');
+    contenedorApp.innerHTML = html;
+}
