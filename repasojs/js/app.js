@@ -444,8 +444,15 @@ console.log(tarea1);
 tareaCompletada(); */
 
 import Tarea  from "./tareas.js";
+import ComprasPendientes from "./compras.js"
 
 const tarea1 = new Tarea('Aprender JavaScript', 'Urgente');
 
 console.log(tarea1);
 tarea1.mostrar();
+
+const compra1 = new ComprasPendientes('Jabon', 'Urgente', 3);
+
+console.log(compra1);
+compra1.mostrar();
+compra1.hola();

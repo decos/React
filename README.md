@@ -91,3 +91,5 @@ Se dice que cuando pasas una funcion a una clase ya es un metodo
 ## Exportar funciones hacia otros modulos
 
 ## Exportando clases en modulos
+
+## Exportando clases que heredan de otras
