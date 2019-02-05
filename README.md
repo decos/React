@@ -118,10 +118,24 @@ Instalando NodeJS, NPM y create-react-app
 
 ### WEBPACK
 
-        - Es un bundler(paquete) es decir crea paquetes de modulos para aplicaciones JavaScript modernas
-        - Lo que haces es procesar la aplicación, mapea todas las dependencias de un módulo, con esto crea uno varios paquetes(bundlers)
-        - Identifica los distintos tipos de archivos (.png, .jpg, .js, .ts, .sass), todas las procesa Webpack y nos da una salida la cual viene ser nuestro bundler(paquete), con todas las dependencias bien identificadas.
-        - Permite transpilar el codigo de JavaScript Moderno a versiones anteriores de JavaScript para mayor compatibilidad con Babel.
+- Es un bundler(paquete) es decir crea paquetes de modulos para aplicaciones JavaScript modernas
+- Lo que haces es procesar la aplicación, mapea todas las dependencias de un módulo, con esto crea uno varios paquetes(bundlers)
+- Identifica los distintos tipos de archivos (.png, .jpg, .js, .ts, .sass), todas las procesa Webpack y nos da una salida la cual viene ser nuestro bundler(paquete), con todas las dependencias bien identificadas.
+- Permite transpilar el codigo de JavaScript Moderno a versiones anteriores de JavaScript para mayor compatibilidad con Babel.
 
 ## Instalando create-react-app
 
+    Proyecto: https://github.com/facebook/create-react-app
+
+1. Instalar de forma global create-react-app
+
+        sudo npm install -g create-react-app
+
+2. Crear el proyecto **basicosreact**
+
+        create-react-app basicosreact
+
+3. Iniciamos el servidor de desarrollo
+
+        cd basicosreact
+        npm start
